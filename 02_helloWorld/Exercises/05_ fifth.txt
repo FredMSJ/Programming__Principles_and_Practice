@@ -1,0 +1,60 @@
+// -> Comment a line.
+  ->Define a comment line.
+
+<< -> Cursor to output.
+  ->The output operator. "Put it into cout".
+
+C++ -> Programming language.
+  ->Is a programming language designed for a wide selection of programming tasks.
+
+Comment -> Content ignored by the compiler and useful for other programmers to understand the code.
+  ->Are written to describe what the program is intended to do and in general to provide information
+    useful for humans that can't directly expressed in code.
+
+Compiler -> Responsible for reading the source code and also responsible for transforming it into object code.
+  ->Its a program that translate the program from the human-readable form to something a machine can "understand".
+
+Compile-time-error -> Source code compile-time error.
+  ->Errors found by the compiler.
+
+Cout -> Output content.
+  ->The Caracter output operator.
+
+Executable -> Result of your job :).
+  ->What the computer executes.
+
+Function -> With some parameters, the function will do what it built to do.
+  ->Is a named unit of code that can be invoked(called) from different parts of a program; a logical unit of computation.
+
+header -> Its a header of something, to identify something.
+  ->Its a file containing declarations used to share interfaces between parts of a program.
+
+IDE -> Its a tool thats contaim all the tools to a developer program.
+  ->"Interactive development environment".
+
+Include -> Include something. Refer something in other place.
+  ->It instucts the computer to make available("to include") facilities from a file std_lib_facilities.h.
+
+Library -> Has the code for refer of code.
+  ->Is simple some code--usually written by others-- that we access using declarations found in a #included file.
+
+Linker -> Link the object code and the standard library.
+  ->The program that links the parts object code and object code from the standard libary together.
+
+Main() -> Is there where all the program do goes.
+  ->Is the main function. Tell where to start executing.
+
+Object code -> Its the code after pass and be built by the compiler.
+  ->Output from a compiler intended as inputfor a linker(for the linker to produce executable code).
+
+Output -> Is the output of the program.
+  ->Values produced by computation.
+
+Program -> Its the final product, the solution.
+  ->Is a code(possibly with associated data) that is sufficiently complete to be executed by a computer.
+
+Source Code -> Its the code what developer write and modify.
+  ->Code as produced by a programmer and (in principle) readable by other programmers.
+
+Statement -> I don't know.
+  ->Its a set of valus.
