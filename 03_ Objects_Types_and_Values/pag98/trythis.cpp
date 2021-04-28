@@ -12,6 +12,16 @@ int main()
        << "\nn squared == " << n * n
        << "\nhalf of n == " << n / 2
        << "\nsquared root of n == " << sqrt(n) << '\n';
+
+  //Dealing with double for int
+  cout << "Now we will see the 'n' int conversion:\n";
+  int c = n;
+  cout << "c == " << c
+       << "\nhalf of c == " << c / 2
+       << "\nmodulo of c == " << c % 2
+       << "\nthe validation of c: c/2 * 2+c%2 == " << c / 2 * 2 + c % 2
+       << '\n';
+
   keep_window_open();
   return 0;
 }
