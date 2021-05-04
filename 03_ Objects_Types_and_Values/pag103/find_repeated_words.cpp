@@ -7,7 +7,7 @@ int main()
   string current;
   while (cin >> current)
   {
-    ++number_of_words; //increase word count.
+    ++number_of_words; //increase word count. could be number_of_word +=1
     if (previous == current)
     {
       cout << "word number " << number_of_words
