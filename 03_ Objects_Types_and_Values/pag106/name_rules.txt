@@ -1,0 +1,11 @@
+Names of variables must be short, but usefull.
+1. Don't use more than teo words to describe one variable. (Ex: the_number_of_elements)
+  try this: elements_number
+
+2. Try to use underscores to separete words in an identifier (Ex: _ )
+
+3. Never use names with all capital letters. They are reserved for macros. (Ex: ALL_CAPITAL_LETTERS)
+
+4. We use an initial capital letter for types we define. (Ex: Square, Graph)
+
+5. The C++ language and standard library don't use the initial-capital-letter style.
