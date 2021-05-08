@@ -8,5 +8,16 @@ int main()
   char c2 = i1;
 
   cout << c << ' ' << i1 << ' ' << c2 << '\n';
+
+  double d1 = 2.3;
+  double d2 = d1 + 2;
+  if (d1 < 0)
+  {
+    cout << "d1 is negative" << '\n';
+  }
+  else
+  {
+    cout << "d1 is positive" << '\n';
+  }
   keep_window_open();
 }
