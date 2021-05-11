@@ -13,4 +13,81 @@ to input the value into your program?
 4. What is \n called and what purpose does it serve?
   Is a especial character indicating a newline.
 
-5.
+5. What terminates input into a string?
+  A string (by default) is terminated by whitespace. And if the formatting doesn't match.
+
+6. What terminates input into an integer?
+  When the formatting doesn't match.
+
+7. How would you write (code) as a single line of code?
+  cout << "Hello, " << first_name << "!\n";
+
+8. What is an object?
+  An object is some memory that holds a value of a given type.
+
+9. What is a literal?
+  Literal represents values of various types. For exemple, the literal 12 represents the integer value "twelve".
+  "Morning" represents the caracter string value Morning, and true represents the Boolean value true.
+
+10. What kinds of literals are there?
+  As many type exists :D
+
+11. Whats is a variable?
+  Is a named object. 
+
+12. What are typical size for a char, an int, and a double?
+  Char == 1byte (8bits), Int == 4bytes, Double == 8bytes.
+
+13. What measures do we use for the size of small entities in memory, such as ints and strings?
+  bits.
+
+14. What is the diference  between = and ==?
+  = is to set some valor. == is to compare. 
+
+15. What is definition? 
+  Is a declaration that sets aside memory for an object.
+
+16. What is an initialization and how dows it differ from an assignment?
+  Is the initialize of an object. Initialization doesen't need set some value. 
+  Assignment is that; set some value in memory. 
+
+17. What is string concatenation and how do you make it work in C++?
+  With the plus operator (+).
+
+18. Wich of the following are legal names in C++? If a name is not legal, why not?
+  This_little_pig == true
+  latest thing == false (whitespace)
+  MiniMineMine == true (but not recommended)
+  This_1_is fine == false (whitespace)
+  the_$12_method == false ($ is not valid)
+  number == true 
+  2_For_1_special == false (must start with a letter)
+  _this_is_ok == true (but system code or machine-generated code might have names with underscores. Avoid it)
+  correct? == false (must contain only letters, digits ,and underscores)
+
+19. Give five examples of legal names that you shouldn't use because they are likely to cause confusion.
+  first
+  thing
+  s7
+  back
+  str1ngs
+
+20. What are some good rules for choosing names?
+  Choose meaningful names. Choose names that will help people understand your program. 
+  Avoid abbreviations and acronyms.
+
+21. What is type safety and why is it important?
+  Is type-safety when objects are used only according to the rules for their type.
+  Type-safety is a pack of good habits that'll save you a lot of grief.
+
+22. Why can conversion from double to int be a bad thing?
+  Because the value stored might differ from the value assigned.
+
+23. Define a rule to help decife if a conversion from one type to another is safe or unsafe.
+  When the value doesen't have gain or lost of content == safe
+  else == unsafe.
+
+
+
+
+
