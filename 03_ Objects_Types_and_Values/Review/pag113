@@ -1,0 +1,16 @@
+1. What is meant by the term prompt?
+  Because it prompts the user to take an action.
+
+2. Which operator do you use to read into a variable?
+  (=)
+
+3. If you want the user to imput an integer value into your program for a variable
+named number, what are two lines of code you could write to ask the user to do it and
+to input the value into your program?
+  int number;
+  cin >> number;
+
+4. What is \n called and what purpose does it serve?
+  Is a especial character indicating a newline.
+
+5.
