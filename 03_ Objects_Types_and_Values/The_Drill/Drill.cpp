@@ -15,5 +15,7 @@ int main()
        << "Hey, have you seen " << friend_name << " miss you both! ";
 
   keep_window_open();
+
+  // desmonstrando programação para lucas
   return 0;
 }
