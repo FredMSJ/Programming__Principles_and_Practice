@@ -10,23 +10,23 @@ int main()
   {
     if (s == "zero")
     {
-      n = 0;
+      cout << "The integer value of " << s << " is 0\n";
     }
     else if (s == "one")
     {
-      n = 1;
+      cout << "The integer value of " << s << " is 1\n";
     }
     else if (s == "two")
     {
-      n = 2;
+      cout << "The integer value of " << s << " is 2\n";
     }
     else if (s == "three")
     {
-      n = 3;
+      cout << "The integer value of " << s << " is 3\n";
     }
     else if (s == "four")
     {
-      n = 4;
+      cout << "The integer value of " << s << " is 4\n";
     }
     else if (s == "exit")
     {
@@ -34,7 +34,6 @@ int main()
     }
     else
       cout << "Sorry, does not have a numeric value I understand. If wanna stop, tap exit\n";
-    cout << s << " has the value " << n << "\n";
     cout << "Please enter another integer number as a string : \n";
   }
   keep_window_open();
