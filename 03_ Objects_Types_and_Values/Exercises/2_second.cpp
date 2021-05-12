@@ -2,8 +2,8 @@
 
 int main()
 {
-  double miles;
-  double kilometers;
+  double miles = 0;
+  double kilometers = 0;
   double miles_to_kilometers = 1609;
 
   cout << "Enter the miles to convert in kilometers: \n";
