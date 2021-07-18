@@ -13,9 +13,13 @@ int main()
   {
     cout << length << "in == " << cm_per_inch * length << "cm\n";
   }
-  else
+  else if (unit == 'c')
   {
     cout << length << "cm == " << length / cm_per_inch << "in\n";
+  }
+  else
+  {
+    cout << "Sorry ,I don't know a unit called '" << unit << "'\n";
   }
 
   keep_window_open();
