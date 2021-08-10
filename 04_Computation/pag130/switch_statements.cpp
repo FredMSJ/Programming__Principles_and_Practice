@@ -14,9 +14,11 @@ int main()
   case 'i':
     cout << length << "in == " << cm_per_inch * length << "cm\n";
     break;
+
   case 'c':
     cout << length << "cm == " << length / cm_per_inch << "in\n";
     break;
+
   default:
     cout << "Sorry, I don't know a unit called '" << unit << "'\n";
     break;
@@ -24,3 +26,5 @@ int main()
 
   keep_window_open();
 }
+
+//4.4.1.3 -> pag 130
