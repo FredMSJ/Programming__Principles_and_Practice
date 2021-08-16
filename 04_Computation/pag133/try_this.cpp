@@ -36,7 +36,7 @@ int main()
 }
 
 /*
-* If-statement is easier to write tha switch-statement;
+* If-statement is easier to write than switch-statement;
 * Think it work more logicaly in mind;
 * Switch-statement is much clean and easier to understand the code than if-statement; 
 * Switch-statement is more directly seen;
