@@ -2,30 +2,33 @@
 
 int main()
 {
-  int temp = 0;
-  while(temp == 0)
+  vector<double>vetor;
+  for(double enter; cin >> enter;)
   {
-    cout << "Please ennter two numbers followed by spaceblanks:" << "\n";
-    double prime;
-
-    cin >> prime;
     
-    double first = 0;
-    double second = 0;
-
-
-    if(first == 0 || first <= prime)
+    if(vetor.size() < 2)
     {
-      first = prime;
+      vetor.push_back(enter);
+      cout << "teste" << "\n";
     }
 
-    if(second == 0 || second >= prime)
+
+    if (vetor.size() == 2)
     {
-      second = prime;
+      sort(vetor);
+      if(vetor[0] > enter)
+      {
+        vetor[0] = enter;
+      }
+      if(vetor[1] < enter)
+      {
+        vetor[1] = enter;
+      }
+      
+      cout << "the smallest so far is " << vetor[0] << "\n" << "the largest so far is " << vetor[1] << "\n";
+
     }
 
-    cout << "The smaller value so far is: " << first << "\n";
-    cout << "The larger value so far is: " << second << "\n";
 
   }
 
