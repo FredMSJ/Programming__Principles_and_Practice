@@ -1,73 +1,111 @@
 #include "../../lib/std_lib_facilities.h"
 
+constexpr double cm_to_m {0.01};
+constexpr double in_to_m {2.54*cm_to_m};
+constexpr double ft_to_m {12.0*cm_to_m};
+
+const vector<string> legal_units {"cm", "in", "ft", "m"};
+
+bool legalUnit(string unit)
+{
+  bool legal = false;
+  for (auto legal_unit : legal_units)
+  {
+    if (unit == legal_unit)
+    {
+      legal = true;
+    }
+  }
+  return legal;
+}
+
+void printLegalUnits()
+{
+  cout  
+    << "\tcm for centimeters\n"
+    << "\tm for meters\n"
+    << "\tin for inches\n"
+    << "\tft for feets\n";
+}
+
+double convertToMeter(double val, string unit)
+{
+  if("cm" == unit)
+  {
+    return val * cm_to_m;
+  }
+
+  if("in" == unit)
+  {
+    return val * in_to_m;
+  }
+
+  if("ft" == unit)
+  {
+    return val * ft_to_m;
+  }
+  
+  return val;
+}
+
+
 int main()
 {
   vector<double>vetor;
 
+  bool first {true};
+  double val {0.0};
+  double valMeter {0.0};
+  double smallest {0.0};
+  double largest {0.0};
+  string unit {" "};
+
+  printLegalUnits();
   
-  
-  double enter;
-  string resp;
+  string resp = "continue";
 
 
   while(resp != "N")
   { 
-    char unit;
     cout << "Please enter a number followed by unit" << '\n';
-    cin >> enter >> unit;
-    //Start traits
+    cin >> val >> unit;
 
-    // if (unit == "m")
-    // {//problem with String...
-    //   cout << "funciona if \n"; 
-    // }
-
-    cout << unit << '\n';
-
-    if (unit == 'y' ||  unit == 'yard' || unit == 'meter' || unit == 'km' || unit == 'gallons' || unit == NULL)
-    {
-      cout << "Please inser a valid unit" << '\n';
-    }
-
-
-    if (unit == 'm')
-    {
-      enter = enter * 100;
-    }
     
-    if(unit == 'in')
-    {
-      enter = enter * 2.54;
-    }
 
-    if(unit == 'ft')
+    if(legalUnit(unit))
     {
-      enter = enter * 30.48;
-    }
+      valMeter = convertToMeter(val, unit);
 
-    else
-    {
-      cout << "Not a unit I know" << '\n';
-    }
+      cout << val << unit << '\n';
 
-    if(enter != NULL || unit != NULL)
-    {
+      if(unit != "m")
+      {
+        cout << "(" << valMeter << "m)\n";
+      }
+
+      if(first == true)
+      {
+        first = false;
+        cout << " is the first value and therefore the smallest and largest so far.\n";
+        
+      }
+
       if(vetor.size() < 2)
       {
-        vetor.push_back(enter);
+        vetor.push_back(valMeter);
       }
     
 
       if (vetor.size() == 2)
       {
         sort(vetor);
-        if(vetor[0] > enter)
+        if(vetor[0] > valMeter)
         {
-          vetor[0] = enter;
+          vetor[0] = valMeter;
         }
-        if(vetor[1] < enter)
+        if(vetor[1] < valMeter)
         {
-          vetor[1] = enter;
+          vetor[1] = valMeter;
         }
         
         cout << "the smallest so far is " << vetor[0] << "\n" << "the largest so far is " << vetor[1] << "\n";
