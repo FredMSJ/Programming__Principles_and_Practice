@@ -52,13 +52,17 @@ double convertToMeter(double val, string unit)
 int main()
 {
   vector<double>vetor;
+  vector<double>allValues(0);
 
   bool first {true};
   double val {0.0};
   double valMeter {0.0};
   double smallest {0.0};
   double largest {0.0};
+  double sum {0.0};
+  int count {0};
   string unit {" "};
+
 
   printLegalUnits();
   
@@ -111,13 +115,35 @@ int main()
         cout << "the smallest so far is " << vetor[0] << "\n" << "the largest so far is " << vetor[1] << "\n";
 
       }
+      
+      sum += valMeter;
+      count++;
+      allValues.push_back(valMeter);
     }
-
+    else
+    {
+      cout << "Please use a legal unit: \n";
+      printLegalUnits(); 
+    }
+    
     cout << "Do you wanna continue? Y for Yes, N for No" << '\n';
     cin >> resp;
-
-
   }
+   
+  cout  
+  << "The smallest: " << vetor[0] << "m\n"
+  << "The largest: " << vetor[1] << "m\n"
+  << "Number of values entered: " << count << "\n"
+  << "The sum of values: " << sum << "m\n";
+
+  sort(allValues);
+
+  cout << "The entered values in sorted order: ";
+  for(auto value : allValues)
+  {
+    cout << value << " ";
+  }
+  cout << "\n";
 
   keep_window_open();
 }
