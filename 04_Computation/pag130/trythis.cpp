@@ -13,17 +13,17 @@ int main()
   if (unit == 'y')
   {
     //1 Yen ==  0.0091  Dollar
-    cout << length << " yen's is US$" << 0.0091 * dollar << "\n";
+    cout << length << " yen's is US$" << 0.0091 * length << "\n";
   }
   else if (unit == 'e')
   {
     //1 Eur ==  1.18  Dollar
-    cout << length << " euros is US$" << 1.18 * dollar << "\n";
+    cout << length << " euros is US$" << 1.18 * length << "\n";
   }
   else if (unit == 'p')
   {
     //1 Pou ==  1.38  Dollar
-    cout << length << " pounds is US$" << 1.38 * dollar << "\n";
+    cout << length << " pounds is US$" << 1.38 * length << "\n";
   }
   else
   {
